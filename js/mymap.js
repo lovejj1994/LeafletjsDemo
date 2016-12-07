@@ -20,13 +20,13 @@ var demo = (function () {
 		//纬度
 		let lat = e.latlng.lat
 		//声明一个Marker
-		let marker = L.marker([lat, lng]).addTo(mymap);
+		let marker = L.marker([lat, lng]).addTo(mymap)
 
-		marker.bindPopup('经度: ' + lng + '<br/>纬度: ' + lat).openPopup();
+		marker.bindPopup('经度: ' + lng + '<br/>纬度: ' + lat).openPopup()
 	};
 
 	//添加双击事件
-	mymap.on('dblclick', onMapDblClick);
+	mymap.on('dblclick', onMapDblClick)
 
 	return {
 		mymap: mymap
